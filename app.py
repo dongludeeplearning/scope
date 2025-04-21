@@ -26,7 +26,7 @@ if 'show_analysis_tabs' not in st.session_state:
 # st.title("SCOPE: Student Cognitive Observation and Perception for Extrapolation")
 st.markdown("""
 <div style='text-align: center; padding: 10px 0;'>
-    <h1 style='font-size: 36px; color: white; font-weight: 600;'>
+    <h1 style='font-size: 36px; color: #1a73e8; font-weight: 600;'>
         SCOPE: Student Cognitive Observation and Perception Engine
     </h1>
 </div>
