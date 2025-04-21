@@ -76,7 +76,7 @@ if email:
     video_list = get_user_videos(email)
 
     if not video_list:
-        st.warning("No videos assigned to this email. Please contact admin.")
+        st.warning("Use test@buffalo.edu to view a sample video. For more videos, please contact the admin.")
     else:
         video_list_with_blank = [""] + video_list
         selected_video = st.selectbox("Select a video", video_list)
