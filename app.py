@@ -35,12 +35,13 @@ st.markdown("""
 # 🔹 Project Statement
 st.markdown("""
 
-**SCOPE** is an AI-powered system designed to interpret students’ cognitive states by analyzing their non-verbal behaviors during learning activities. By leveraging facial expressions, eye movements, and other visual cues, SCOPE identifies key cognitive indicators such as **engagement**, **boredom**, **confusion**, and **frustration**.
+**SCOPE** is an AI-powered system designed to interpret students’ cognitive states by analyzing their non-verbal behaviors during learning activities. By leveraging facial expressions, eye movements, and other visual cues, SCOPE identifies key indicators such as engagement, boredom, confusion, and frustration. The system reflects its core mission: to broaden the scope of understanding students’ mental states through careful observation, perceptual modeling, and reasoned inference.
 
-The name “SCOPE” not only stands for *Student Cognitive Observation and Perception Engine*, but also reflects the system’s core mission: to broaden the **scope** of understanding students’ mental states through **careful observation, perceptual modeling, and reasoning**.
-
-All interpretations are intended exclusively for **educational enhancement** and **research purposes**, and are not meant to serve as clinical diagnoses. However, the system may assist educators and specialists in monitoring student progress and improving instructional strategies, especially in **exceptional education** contexts.
-
+> ⚠️ The generated reports are not intended to serve as clinical or medical evidence. 
+    However, they may assist speech-language pathologists (SLPs) in monitoring student progress and evaluating 
+    the effectiveness of interventions in exceptional education settings.
+    This project is still under development and intended for research purposes only.
+            
 <span style='font-size:16px'>
 <b>Author:</b> <i>Lu Dong</i>&emsp;&emsp;&emsp;
 <b>Advisor:</b> <i>Prof. Ifeoma Nwogu</i>&emsp;&emsp;&emsp;

@@ -27,12 +27,10 @@ st.title("SCOPE: Student COgnitive Perception and Extrapolation")
 st.markdown("""
 ### Statement
 
-This project analyzes students' non-verbal behaviors during learning to interpret cognitive states 
-such as engagement, boredom, confusion, and frustration using visual cues.
-All interpretations are intended solely for educational improvement and research purposes. 
+SCOPE is an AI-powered system designed to interpret students’ cognitive states by analyzing their non-verbal behaviors during learning activities. By leveraging facial expressions, eye movements, and other visual cues, SCOPE identifies key indicators such as engagement, boredom, confusion, and frustration. The system reflects its core mission: to broaden the scope of understanding students’ mental states through careful observation, perceptual modeling, and reasoned inference.
 
-> ⚠️ The generated reports are not intended to serve as clinical or medical evidence. However, they may support speech-language pathologists (SLPs) in monitoring student progress 
-and evaluating the effectiveness of interventions in exceptional education settings.
+ ⚠️ The generated reports are not intended to serve as clinical or medical evidence. However, they may assist speech-language pathologists (SLPs) in monitoring student progress and evaluating the effectiveness of interventions in exceptional education settings.
+This project is still under development and intended for research purposes only.
 
 <span style='font-size:16px'>
 <b>Author:</b> <i>Lu Dong</i>&emsp;&emsp;&emsp;
