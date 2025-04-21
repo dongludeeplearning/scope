@@ -174,10 +174,13 @@ if email:
                     st.session_state.report_text = report_text
 
                 st.success("✅ Report generated successfully!")
-                st.info("Here's the analysis summary below:")
-                # 提取高亮首句（第一行）并加粗展示
+      
                 highlight_line = report_text.split('\n')[0].strip()
-                st.markdown(f"**🟢 {highlight_line}**")
+                st.info(f"Here's the analysis summary below:\n\n**{highlight_line}**")
+
+                # # 提取高亮首句（第一行）并加粗展示
+                # highlight_line = report_text.split('\n')[0].strip()
+                # st.markdown(f"** {highlight_line}**")
                 st.text_area("📝 Detailed Report Content", report_text, height=200)
 
             # Step 5: 保存 CSV
