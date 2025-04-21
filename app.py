@@ -27,21 +27,19 @@ if 'show_analysis_tabs' not in st.session_state:
 st.markdown("""
 <div style='text-align: center; padding: 10px 0;'>
     <h1 style='font-size: 36px; color: white; font-weight: 600;'>
-        SCOPE: Student Cognitive Observation and Perception for Extrapolation
+        SCOPE: Student Cognitive Observation and Perception Engine
     </h1>
 </div>
 """, unsafe_allow_html=True)
 
 # 🔹 Project Statement
 st.markdown("""
-### Statement
 
-This project analyzes students' non-verbal behaviors during learning to interpret cognitive states 
-such as engagement, boredom, confusion, and frustration using visual cues.
-All interpretations are intended solely for educational improvement and research purposes. 
+**SCOPE** is an AI-powered system designed to interpret students’ cognitive states by analyzing their non-verbal behaviors during learning activities. By leveraging facial expressions, eye movements, and other visual cues, SCOPE identifies key cognitive indicators such as **engagement**, **boredom**, **confusion**, and **frustration**.
 
-> ⚠️ The generated reports are not intended to serve as clinical or medical evidence. However, they may support speech-language pathologists (SLPs) in monitoring student progress 
-and evaluating the effectiveness of interventions in exceptional education settings.
+The name “SCOPE” not only stands for *Student Cognitive Observation and Perception Engine*, but also reflects the system’s core mission: to broaden the **scope** of understanding students’ mental states through **careful observation, perceptual modeling, and reasoning**.
+
+All interpretations are intended exclusively for **educational enhancement** and **research purposes**, and are not meant to serve as clinical diagnoses. However, the system may assist educators and specialists in monitoring student progress and improving instructional strategies, especially in **exceptional education** contexts.
 
 <span style='font-size:16px'>
 <b>Author:</b> <i>Lu Dong</i>&emsp;&emsp;&emsp;
@@ -71,6 +69,36 @@ This task focuses on analyzing and reasoning about students' cognitive states ba
 
 # =================== 登录入口 ====================
 email = st.text_input("Enter your email to log in", value=st.session_state.email)
+
+# =================== 上传按钮与等待提示 ====================
+st.markdown("Select or upload a video for analysis")
+
+# =================== 上传状态初始化 ====================
+if 'uploaded_filename' not in st.session_state:
+    st.session_state.uploaded_filename = None
+if 'upload_status' not in st.session_state:
+    st.session_state.upload_status = ""
+
+# =================== 上传区域始终可见 ====================
+# st.markdown("Upload a video for analysis")
+
+uploaded_file = st.file_uploader("Choose a .mp4 file to upload", type=["mp4"], key="video_uploader")
+
+if uploaded_file is not None and st.session_state.uploaded_filename != uploaded_file.name:
+    # 保存上传文件
+    save_path = os.path.join("videos", uploaded_file.name)
+    with open(save_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+    
+    # 设置上传状态
+    st.session_state.uploaded_filename = uploaded_file.name
+    st.session_state.upload_status = "waiting_for_gpu"
+
+# =================== 状态提示区 ====================
+if st.session_state.upload_status == "waiting_for_gpu":
+    st.markdown(""" Your video has been uploaded. We are currently waiting for GPU resource allocation. Please be patient...
+    """)
+
 if email:
     st.session_state.email = email
     video_list = get_user_videos(email)
