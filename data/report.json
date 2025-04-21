@@ -1,0 +1,30 @@
+{
+  "1100021003.mp4": {
+    "AU_video": "1100021003_AU.mp4",
+    "AU_report": "AU3 (Brow Lowerer) - Active in 72.13% of frames.",
+    "VA_plot": "1100021003_VA_plot.png",
+    "VA_report": "Valence fluctuates across the clip",
+    "Eyeblink_video": "eyeblink_1100021003.mp4",
+    "Eyeblink_report": "Three eye blinks were observed.",
+    "Gaze_tracking" : "gaze_1100021003.mp4",
+    "Gaze_reprot" : "Gaze tracking confirms focused gaze on learning content (~80%) with minimal deviation",
+    "text_report": " Overall, the student shows high engagement throughout this video clip, with no strong signs of confusion or frustration.\n\n - The facial action analysis shows:\n • AU3 (Brow Lowerer) – Active in 72.13% of frames. This AU involves the contraction of the muscles between the eyebrows, often associated with concentration, negative affect, or emotional tension. Its sustained presence may reflect cognitive effort or mild frustration.\n   • AU5 (Upper Lid Raiser / Cheek Raiser) – Active in 3.28% of frames. This AU is typically linked to surprise, alertness, or interest, but the low activation rate suggests only occasional moments of increased attention or emotional arousal.\n    • AU22 (Lips Part) – Active in 1.64% of frames. This AU is associated with verbal expression or mild emotional reaction. Its rare occurrence in this video may indicate limited speech or passive engagement.\n - Valence fluctuates across the clip, while Arousal remains consistently high. The combination of negative valence and high arousal in the mid-segment suggests moments of stress or cognitive effort. Later segments show positive valence with high arousal, indicating emotionally engaged and energetic states.\n\n- Three eye blinks were observed. The low frequency and brief duration suggest focused attention and cognitive engagement, as learners often suppress blinking to maintain visual continuity and concentration.\n\n- Gaze tracking confirms focused gaze on learning content (~80%) with minimal deviation, though brief jump glances during quiz sections may reflect temporary uncertainty."
+  },
+  "4100321001.mp4": {
+    "AU_video": "4100321001_AU.mp4",
+    "AU_report": "AU3 (Brow Lowerer) - Active in 72.13% of frames.",
+    "VA_plot": "4100321001_VA_plot.png",
+    "VA_report": "Valence fluctuates across the clip",
+    "Eyeblink_video": "eyeblink_4100321001.mp4",
+    "Eyeblink_report": "Three eye blinks were observed.",
+    "Gaze_tracking" : "gaze_4100321001.mp4",
+    "Gaze_reprot" : "Gaze tracking confirms focused gaze on learning content (~80%) with minimal deviation",
+    "text_report": "Engagement was low during the second half of the video."
+  },
+  "5000441006.mp4": {
+    "text_report": "This is a summary for example_video.mp4. Everything looks great!"
+  },
+  "5000441007.mp4": {
+    "text_report": "Engagement was low during the second half of the video."
+  }
+}
